@@ -1,0 +1,76 @@
+<DOCTYPE html>
+  <html lang = "pt-br">
+  <meta charset = "UTF-8">
+  <Title> Detalhes da Descoberta </Title>
+  <style>
+     body{
+        background-color: aliceblue;
+        margin : 200px;
+        font-size: 25px;
+     }
+
+     .fundo {
+           justify-content: center;
+           align-items: center;
+           display: inline-block;
+           border-radius : 5px;
+           width: 1500px;
+           height: 650px;
+           background-color: rgb(240, 239, 239);
+           margin-right: 2px;
+           border: 0.5px solid rgb(53, 53, 53);
+      }
+
+  </style>
+  <body>
+  <div class = "fundo">
+  <form action="/processar-dados" method="post">
+    <h3> Dados Pessoais : </h3>
+    <div>
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+    </div>
+  
+    <div>
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+    </div>
+  
+    <div>
+      <label for="senha">Senha:</label>
+      <input type="password" id="senha" name="senha" placeholder="Crie uma senha" required>
+    </div>
+
+    <div><p>
+      <label for="idade">Data de Nascimento :</label>
+      <input type="date" id="idade" name="idade" placeholder="Coloque sua data de nascimento" required>
+    </p></div>
+
+    <label for="myfile">Coloque sua foto</label>
+    <input type="file" id="meufile" name="myfile">
+
+    <p>
+      <h3> Experiência Profissional : </h3>
+      <label for="cars">Possui alguma experiência na área</label>
+      <select id="sim ou nao" name="Sim ou Não">
+        <option value="Sim">Sim</option>
+        <option value="Não">Não</option>
+      </select>
+      <p>
+      <input type="checkbox" id="caixa1" name="caixa1" value="1">
+      <label for="Experiência 1"> Modelagem 3D e digitalização </label><br>
+      <input type="checkbox" id="caixa2" name="caixa2" value="2">
+      <label for="Experiência 2"> Sistemas de Informação Geográfica (SIG)</label><br>
+      <input type="checkbox" id="caixa3" name="caixa3" value="3">
+      <label for="Experiência 3"> Análise e processamento de dados digital</label><br>
+      <input type="checkbox" id="caixa4" name="caixa4" value="4">
+      <label for="Experiência 4"> Realidade Virtual e Aumentada </label><br>
+      </p>
+    </p> 
+    <div>
+      <input type="submit" value="Enviar">
+    </div>
+  </form>
+  </div> 
+  </body>
+</html>
